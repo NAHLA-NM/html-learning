@@ -4,49 +4,64 @@
   <title>HTML Tags Chart</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      margin: 20px;
-      color: #222;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfbfb;
+      background: linear-gradient(to right, #ebedee, #e1f5fe);
+      padding: 20px;
+      color: #333;
     }
     h1 {
       text-align: center;
-      color: #c0467f;
+      background-color: #4a148c;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
     }
     table {
       border-collapse: collapse;
       width: 100%;
       margin-top: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     th, td {
-      border: 1px solid #eecece;
       padding: 12px;
-      text-align: left;
-      vertical-align: top;
+      border: 1px solid #ccc;
     }
     th {
-      background-color: #eaeaea;
+      background-color: #ff8a65;
+      color: white;
     }
-    pre {
-      background-color: #f4f4f4;
-      padding: 8px;
-      overflow-x: auto;
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
     }
-    .code {
-      background-color: #eef;
-      padding: 5px;
+    code {
+      background: #e0f7fa;
+      padding: 3px 5px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .section {
+      margin-top: 40px;
+    }
+    .tag-example {
+      background-color: #e1bee7;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 10px 0;
     }
   </style>
 </head>
 <body>
 
 <h1>HTML Tags Chart</h1>
-<table>
-  <tr>
-    <th>Tag Name</th>
-    <th>Code Example</th>
-    <th>Browser View</th>
-  </tr>
+<div class="section">
+  <table>
+    <tr>
+      <th>Tag Name</th>
+      <th>Code Example</th>
+      <th>Browser View</th>
+    </tr>
 
   <tr>
     <td>&lt;!-- comment --&gt;</td>
@@ -74,14 +89,32 @@
 
   <tr>
     <td>&lt;br&gt;<br>Line Break</td>
-    <td><pre>Line1&lt;br&gt;Line2</pre></td>
-    <td>Line1<br>Line2</td>
+    <td><pre>Web&lt;br&gt;Technology</pre></td>
+    <td>Web<br>Technology</td>
   </tr>
 
   <tr>
     <td>&lt;center&gt;<br>Center Text</td>
     <td><pre>&lt;center&gt;Centered Content&lt;/center&gt;</pre></td>
     <td><center>Centered Content</center></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;dd&gt;</code></td>
+    <td><code>&lt;dd&gt;Definition of the term&lt;/dd&gt;</code></td>
+    <td>Definition of the term</td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;dl&gt;</code></td>
+    <td><code>&lt;dl&gt;&lt;dt&gt;Term&lt;/dt&gt;&lt;dd&gt;Definition&lt;/dd&gt;&lt;/dl&gt;</code></td>
+    <td>Term / Definition</td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;dt&gt;</code></td>
+    <td><code>&lt;dt&gt;Definition Term&lt;/dt&gt;</code></td>
+    <td>Definition Term</td>
   </tr>
 
   <tr>
@@ -142,15 +175,63 @@ Email: &lt;input name="Email"&gt;&lt;br&gt;
   </tr>
 
   <tr>
-    <td>&lt;hr&gt;<br>Horizontal Rule</td>
-    <td><pre>&lt;hr&gt;</pre></td>
-    <td><hr></td>
+    <td><code>&lt;head&gt;</code></td>
+    <td><code>&lt;head&gt;Meta and title tags&lt;/head&gt;</code></td>
+    <td>Not visible</td>
   </tr>
-  
+
+  <tr>
+    <td><code>&lt;hr&gt;</code></td>
+    <td><code>&lt;hr size="3" color="#ff0000"&gt;</code></td>
+    <td><hr size="3" color="#ff0000"></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;html&gt;</code></td>
+    <td><code>&lt;html&gt;...content...&lt;/html&gt;</code></td>
+    <td>HTML document root</td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;i&gt;</code></td>
+    <td><code>&lt;i&gt;Example&lt;/i&gt;</code></td>
+    <td><i>Example</i></td>
+  </tr>
+
   <tr>
     <td>&lt;img&gt;<br>Image</td>
     <td><pre>&lt;img src="photo.webp" width="200" height="150"&gt;</pre></td>
     <td><img src="photo.webp" alt="Spiti Valley" width="200" height="150"></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;input&gt;</code></td>
+    <td><code>&lt;input type="text" value=""&gt;</code></td>
+    <td><input type="text" value=""></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;li&gt;</code></td>
+    <td><code>&lt;li&gt;Item&lt;/li&gt;</code></td>
+    <td><ul><li>Item</li></ul></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;link&gt;</code></td>
+    <td><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></td>
+    <td>Links stylesheet</td>
+  </tr>
+
+  <tr>
+    <td>&lt;marquee&gt;<br>Scrolling Text</td>
+    <td><pre>&lt;marquee&gt;Hello&lt;/marquee&gt;</pre></td>
+    <td><marquee>Hello</marquee></td>
+  </tr>
+
+  <tr>
+    <td>&lt;meta&gt;<br>Meta Info</td>
+    <td><pre>&lt;meta name="description" content="..."/&gt;</pre></td>
+    <td><i>Not visible in browser</i></td>
   </tr>
 
   <tr>
@@ -166,29 +247,77 @@ Email: &lt;input name="Email"&gt;&lt;br&gt;
   </tr>
 
   <tr>
-    <td>&lt;table&gt;<br>Table</td>
-    <td><pre>
-&lt;table&gt;
-  &lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-</pre></td>
-    <td>
-      <table border="1"><tr><td>Cell</td></tr></table>
-    </td>
+    <td><code>&lt;option&gt;</code></td>
+    <td><code>&lt;option&gt;Option&lt;/option&gt;</code></td>
+    <td><select><option>Option</option></select></td>
   </tr>
 
   <tr>
-    <td>&lt;marquee&gt;<br>Scrolling Text</td>
-    <td><pre>&lt;marquee&gt;Hello&lt;/marquee&gt;</pre></td>
-    <td><marquee>Hello</marquee></td>
+    <td><code>&lt;p&gt;</code></td>
+    <td><code>&lt;p&gt;Paragraph&lt;/p&gt;</code></td>
+    <td><p>Paragraph</p></td>
   </tr>
 
   <tr>
-    <td>&lt;meta&gt;<br>Meta Info</td>
-    <td><pre>&lt;meta name="description" content="..."/&gt;</pre></td>
-    <td><i>Not visible in browser</i></td>
+    <td><code>&lt;small&gt;</code></td>
+    <td><code>&lt;small&gt;Small&lt;/small&gt;</code></td>
+    <td><small>Small</small></td>
   </tr>
 
+  <tr>
+    <td><code>&lt;strike&gt;</code></td>
+    <td><code>&lt;strike&gt;Deleted&lt;/strike&gt;</code></td>
+    <td><strike>Deleted</strike></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;strong&gt;</code></td>
+    <td><code>&lt;strong&gt;Bold&lt;/strong&gt;</code></td>
+    <td><strong>Bold</strong></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;table&gt;</code></td>
+    <td><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></td>
+    <td><table border="1"><tr><td>Data</td></tr></table></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;td&gt;</code></td>
+    <td><code>&lt;td&gt;Cell&lt;/td&gt;</code></td>
+    <td><table border="1"><tr><td>Cell</td></tr></table></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;th&gt;</code></td>
+    <td><code>&lt;th&gt;Header&lt;/th&gt;</code></td><td><table border="1"><tr><th>Header</th></tr></table></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;title&gt;</code></td>
+    <td><code>&lt;title&gt;Page Title&lt;/title&gt;</code></td><td>Shown in browser tab</td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;tr&gt;</code></td>
+    <td><code>&lt;tr&gt;Row&lt;/tr&gt;</code></td><td><table border="1"><tr><td>Row</td></tr></table></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;tt&gt;</code></td>
+    <td><code>&lt;tt&gt;Mono&lt;/tt&gt;</code></td><td><tt>Mono</tt></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;u&gt;</code></td>
+    <td><code>&lt;u&gt;Underlined&lt;/u&gt;</code></td><td><u>Underlined</u></td>
+  </tr>
+
+  <tr>
+    <td><code>&lt;ul&gt;</code></td>
+    <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td><td><ul><li>Item</li></ul></td>
+  </tr>
+  
 </table>
 </body>
 </html>
